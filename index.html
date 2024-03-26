@@ -10,28 +10,29 @@ Contact: contact@hencework.com
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | AppName</title>
+    <title>Contact Cards | Jampack - Admin CRM Dashboard Template</title>
     <meta name="description" content="A modern CRM Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap."/>
     
 	<!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 	
-	<!-- Daterangepicker CSS -->
-    <link href="vendors/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap Dropify CSS -->
+	<link href="vendors/dropify/dist/css/dropify.min.css" rel="stylesheet" type="text/css"/>
 	
-	<!-- Bootstrap Dropzone CSS -->
-	<link href="vendors/dropzone/dist/dropzone.min.css" rel="stylesheet" type="text/css"/>
-	
-	<!-- Dragula CSS -->
-    <link href="vendors/dragula/dist/dragula.min.css" rel="stylesheet" type="text/css">
+	<!-- select2 CSS -->
+    <link href="vendors/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Data Table CSS -->
+    <link href="vendors/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendors/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 
 	<!-- CSS -->
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
    	<!-- Wrapper -->
-	<div class="hk-wrapper" data-layout="vertical" data-layout-style="default" data-menu="light" data-footer="simple" data-hover="active">
+	<div class="hk-wrapper" data-layout="vertical" data-layout-style="collapsed" data-menu="light" data-footer="simple" data-hover="active">
 		<!-- Top Navbar -->
 		<nav class="hk-navbar navbar navbar-expand-xl navbar-light fixed-top">
 			<div class="container-fluid">
@@ -170,9 +171,9 @@ Contact: contact@hencework.com
 			<!-- End Nav -->
 			<div class="nav-end-wrap">
 				<ul class="navbar-nav flex-row">
-					<!-- <li class="nav-item">
+					<li class="nav-item">
 						<a href="email.html" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover"><span class="icon"><span class=" position-relative"><span class="feather-icon"><i data-feather="inbox"></i></span><span class="badge badge-sm badge-soft-primary badge-sm badge-pill position-top-end-overflow-1">4</span></span></span></a>
-					</li> -->
+					</li>
 					<li class="nav-item">
 						<div class="dropdown dropdown-notifications">
 							<a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation role="button" aria-haspopup="true" aria-expanded="false"><span class="icon"><span class="position-relative"><span class="feather-icon"><i data-feather="bell"></i></span><span class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span></span></a>
@@ -183,8 +184,8 @@ Contact: contact@hencework.com
 									<a href="javascript:void(0);" class="dropdown-item">
 										<div class="media">
 											<div class="media-head">
-												<div class="avatar avatar-rounded avatar-xs">
-													<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
+												<div class="avatar avatar-rounded avatar-sm">
+													<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
 												</div>
 											</div>
 											<div class="media-body">
@@ -201,7 +202,7 @@ Contact: contact@hencework.com
 									<a href="javascript:void(0);" class="dropdown-item">
 										<div class="media">
 											<div class="media-head">
-												<div class="avatar  avatar-icon avatar-xs avatar-success avatar-rounded">
+												<div class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
 													<span class="initial-wrap">
 														<span class="feather-icon"><i data-feather="inbox"></i></span>
 													</span>
@@ -220,7 +221,7 @@ Contact: contact@hencework.com
 									<a href="javascript:void(0);" class="dropdown-item">
 										<div class="media">
 											<div class="media-head">
-												<div class="avatar  avatar-icon avatar-xs avatar-pink avatar-rounded">
+												<div class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
 													<span class="initial-wrap">
 														<span class="feather-icon"><i data-feather="clock"></i></span>
 													</span>
@@ -239,7 +240,7 @@ Contact: contact@hencework.com
 									<a href="javascript:void(0);" class="dropdown-item">
 										<div class="media">
 											<div class="media-head">
-												<div class="avatar avatar-xs avatar-rounded">
+												<div class="avatar avatar-sm avatar-rounded">
 													<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
 												</div>
 											</div>
@@ -256,7 +257,7 @@ Contact: contact@hencework.com
 									<a href="javascript:void(0);" class="dropdown-item">
 										<div class="media">
 											<div class="media-head">
-												<div class="avatar avatar-xs avatar-rounded">
+												<div class="avatar avatar-sm avatar-rounded">
 													<img src="dist/img/avatar10.jpg" alt="user" class="avatar-img">
 												</div>
 											</div>
@@ -274,7 +275,7 @@ Contact: contact@hencework.com
 									<a href="javascript:void(0);" class="dropdown-item">
 										<div class="media">
 											<div class="media-head">
-												<div class="avatar  avatar-icon avatar-xs avatar-danger avatar-rounded">
+												<div class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
 													<span class="initial-wrap">
 														<span class="feather-icon"><i data-feather="calendar"></i></span>
 													</span>
@@ -307,7 +308,7 @@ Contact: contact@hencework.com
 								<div class="p-2">
 									<div class="media">
 										<div class="media-head me-2">
-											<div class="avatar avatar-primary avatar-xs avatar-rounded">
+											<div class="avatar avatar-primary avatar-sm avatar-rounded">
 												<span class="initial-wrap">Hk</span>
 											</div>
 										</div>
@@ -351,16 +352,16 @@ Contact: contact@hencework.com
 									</div>
 								</div>
 								<div class="dropdown-divider"></div>
-								<!-- <a class="dropdown-item" href="profile.html">Profile</a> -->
-								<!-- <a class="dropdown-item" href="#"><span class="me-2">Offers</span><span class="badge badge-sm badge-soft-pink">2</span></a><div class="dropdown-divider"></div> -->
-								<h6 class="dropdown-header">Cuenta</h6>
-								<!-- <a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="credit-card"></i></span><span>Payment methods</span></a> -->
-								<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="check-square"></i></span><span>Mi perfil</span></a>
-								<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="settings"></i></span><span>Ajustes</span></a>
+								<a class="dropdown-item" href="profile.html">Profile</a>
+								<a class="dropdown-item" href="#"><span class="me-2">Offers</span><span class="badge badge-sm badge-soft-pink">2</span></a><div class="dropdown-divider"></div>
+								<h6 class="dropdown-header">Manage Account</h6>
+								<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="credit-card"></i></span><span>Payment methods</span></a>
+								<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="check-square"></i></span><span>Subscriptions</span></a>
+								<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="settings"></i></span><span>Settings</span></a>
 								<div class="dropdown-divider"></div>
-								<!-- <a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="tag"></i></span><span>Raise a ticket</span></a> -->
+								<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="tag"></i></span><span>Raise a ticket</span></a>
 								<div class="dropdown-divider"></div>
-								<!-- <a class="dropdown-item" href="#">Terms & Conditions</a> -->
+								<a class="dropdown-item" href="#">Terms & Conditions</a>
 								<a class="dropdown-item" href="login.html">Salir</a>
 							</div>
 						</div>
@@ -404,59 +405,44 @@ Contact: contact@hencework.com
 					<div class="menu-group">
 						<ul class="navbar-nav flex-column">
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">
-									<span class="nav-icon-wrap">
+								<a class="nav-link" href="employes.html">
+									<span class="nav-icon-wrap position-relative">
+										<!-- <span class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span> -->
 										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-template" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-												<rect x="4" y="4" width="16" height="4" rx="1" />
-												<rect x="4" y="12" width="6" height="8" rx="1" />
-												<line x1="14" y1="12" x2="20" y2="12" />
-												<line x1="14" y1="16" x2="20" y2="16" />
-												<line x1="14" y1="20" x2="20" y2="20" />
-											</svg>
+											
+												<span class="svg-icon">
+													<i class="icon" data-icon="&#xe057;"></i>
+												</span>
 										</span>
 									</span>
-									<span class="nav-link-text">Inicio</span>
-									<span class="badge badge-sm badge-soft-pink ms-auto">Hot</span>
+									<span class="nav-link-text">Colaboradores</span>
 								</a>
+								<ul id="dash_scrumboard" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li cMainlass="nav-item">
+												<a class="nav-link" href="projects-board.html"><span class="nav-link-text">All Boards</span></a>
+											</li>
+											
+											<li class="nav-item">
+												<a class="nav-link" href="kanban-board.html"><span class="nav-link-text">Project Kanban</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="pipeline.html"><span class="nav-link-text">Pipeline Kanban</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
 							</li>
 						</ul>	
 					</div>
 					<div class="menu-gap"></div>
 					<div class="menu-group">
 						<div class="nav-header">
-							<span>Menu Administrador</span>
+							<span>Acciones</span>
 						</div>
 						<ul class="navbar-nav flex-column">
-							<li class="nav-item">
-								
-								<ul id="dash_chat" class="nav flex-column collapse  nav-children">
-									<li class="nav-item">
-										<ul class="nav flex-column">
-											<li class="nav-item">
-												<a class="nav-link" href="chats.html"><span class="nav-link-text">Chats</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="chats-group.html"><span class="nav-link-text">Groups</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="chats-contact.html"><span class="nav-link-text">Contacts</span></a>
-											</li>
-										</ul>	
-									</li>	
-									<li class="nav-item">
-										<ul class="nav flex-column">
-											<li class="nav-item">
-												<a class="nav-link" href="chatpopup.html"><span class="nav-link-text">Direct Message</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="chatbot.html"><span class="nav-link-text">Chatbot</span></a>
-											</li>
-										</ul>	
-									</li>
-								</ul>	
-							</li>	
+							
 							<!-- <li class="nav-item">
 								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chatpop">
 									<span class="nav-icon-wrap">
@@ -531,36 +517,7 @@ Contact: contact@hencework.com
 									</li>	
 								</ul>	
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="employes.html">
-									<span class="nav-icon-wrap position-relative">
-										<!-- <span class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span> -->
-										<span class="svg-icon">
-											
-												<span class="svg-icon">
-													<i class="icon" data-icon="&#xe057;"></i>
-												</span>
-										</span>
-									</span>
-									<span class="nav-link-text">Colaboradores</span>
-								</a>
-								<ul id="dash_scrumboard" class="nav flex-column collapse  nav-children">
-									<li class="nav-item">
-										<ul class="nav flex-column">
-											<li cMainlass="nav-item">
-												<a class="nav-link" href="projects-board.html"><span class="nav-link-text">All Boards</span></a>
-											</li>
-											
-											<li class="nav-item">
-												<a class="nav-link" href="kanban-board.html"><span class="nav-link-text">Project Kanban</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="pipeline.html"><span class="nav-link-text">Pipeline Kanban</span></a>
-											</li>
-										</ul>	
-									</li>	
-								</ul>	
-							</li>
+						
 							<!-- <li class="nav-item">
 								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_contact">
 									<span class="nav-icon-wrap">
@@ -938,13 +895,120 @@ Contact: contact@hencework.com
 		<!-- Main Content -->
 		<div class="hk-pg-wrapper pb-0">
 			<!-- Page Body -->
-			
 			<div class="hk-pg-body py-0">
-				<div class="todoapp-wrap todoapp-info-active">
-					<nav class="todoapp-sidebar">
-						
+				<div class="contactapp-wrap">
+					<nav class="contactapp-sidebar">
+						<div data-simplebar class="nicescroll-bar">
+							<div class="menu-content-wrap">
+								<button type="button" class="btn btn-primary btn-rounded btn-block mb-4" data-bs-toggle="modal" data-bs-target="#add_new_contact">
+									Add new contact
+								</button>
+								<div class="menu-group">
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item active">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="inbox"></i></span></span>
+												<span class="nav-link-text">All Contacts</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="star"></i></span></span>
+												<span class="nav-link-text">Important</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="archive"></i></span></span>
+												<span class="nav-link-text">Archive</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="edit"></i></span></span>
+												<span class="nav-link-text">Pending</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="trash-2"></i></span></span>
+												<span class="nav-link-text">Deleted</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="separator separator-light"></div>
+								<div class="menu-group">
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="upload"></i></span></span>
+												<span class="nav-link-text">Export</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="download"></i></span></span>
+												<span class="nav-link-text">Import</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="printer"></i></span></span>
+												<span class="nav-link-text">Print</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="separator separator-light"></div>
+								<div class="d-flex align-items-center justify-content-between mb-2">
+									<div class="title-sm text-primary mb-0">Labels</div>
+									<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="modal" data-bs-target="#add_new_label"><span class="icon" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Add Label"><span class="feather-icon"><i data-feather="plus"></i></span></span></a>
+								</div>
+								<div class="menu-group">
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link link-badge-right" href="#">
+												<span class="nav-link-text">Design</span>
+												<span class="badge badge-pill badge-sm badge-soft-primary ms-auto">136</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link link-badge-right" href="#">
+												<span class="nav-link-text">Development</span>
+												<span class="badge badge-pill badge-sm badge-soft-primary ms-auto">2</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link link-badge-right" href="#">
+												<span class="nav-link-text">Inventory</span>
+												<span class="badge badge-pill badge-sm badge-soft-primary ms-auto">86</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link link-badge-right" href="#">
+												<span class="nav-link-text">Human Resource</span>
+												<span class="badge badge-pill badge-sm badge-soft-primary ms-auto">34</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="separator separator-light"></div>
+								<div class="d-flex align-items-center justify-content-between mb-4">
+									<div class="title-sm text-primary mb-0">Tags</div>
+									<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="modal" data-bs-target="#add_new_tag"><span class="icon" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Add Tag"><span class="feather-icon"><i data-feather="plus"></i></span></span></a>
+								</div>
+								<div class="tag-cloud">
+									<a href="#" class="badge badge-outline badge-light">Collaboration</a>
+									<a href="#" class="badge badge-outline badge-light">React Developer</a>
+									<a href="#" class="badge badge-outline badge-light">Angular Developer</a>
+									<a href="#" class="badge badge-outline badge-light">promotion</a>
+									<a href="#" class="badge badge-outline badge-light">Advertisement</a>
+								</div>
+							</div>
+						</div>
 						<!--Sidebar Fixnav-->
-						<!-- <div class="todoapp-fixednav">
+						<div class="contactapp-fixednav">
 							<div class="hk-toolbar">
 								<ul class="nav nav-light">
 									<li class="nav-item nav-link">
@@ -958,33 +1022,65 @@ Contact: contact@hencework.com
 									</li>
 								</ul>
 							</div>
-						</div> -->
+						</div>
 						<!--/ Sidebar Fixnav-->
 					</nav>
-					<div class="todoapp-content">
-						<div class="todoapp-detail-wrap">
-							<header class="todo-header">
+					<div class="contactapp-content">
+						<div class="contactapp-detail-wrap">
+							<header class="contact-header">
 								<div class="d-flex align-items-center">
-									<a class="todoapp-title dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-										<h1>Bienvenido</h1>
-									</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="align-center"></i></span><span>All Tasks</span></a>
-										<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="list"></i></span><span>My Tasks</span></a>
-										<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="clock"></i></span><span>Pending Tasks</span></a>
-										<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="droplet"></i></span><span>In Progress Tasks</span></a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Urgent Priority</a>
-										<a class="dropdown-item" href="#">High Priority</a>
-										<a class="dropdown-item" href="#">Low Priority</a>
+									<div class="dropdown">
+										<a class="contactapp-title dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+											<h1>Colaboradores</h1>
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="users"></i></span><span>All Contacts</span></a>
+											<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="star"></i></span><span>Important</span></a>
+											<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="archive"></i></span><span>Archive</span></a>
+											<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="edit"></i></span><span>Pending</span></a>
+											<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="trash-2"></i></span><span>Deleted</span></a>
+										</div>
 									</div>
-									
+									<div class="dropdown ms-3">
+										<button class="btn btn-sm btn-outline-secondary flex-shrink-0 dropdown-toggle d-lg-inline-block d-none" data-bs-toggle="dropdown">Agregar colaborador</button>
+										<button class="btn btn-sm btn-primary ms-3"><span><span class="icon"><span class="feather-icon"><i class="icon" data-icon="I"></i></span></span><span class="btn-text">Enviar anuncio</span></span></button>
+										
+										<!-- <button class="btn btn-sm btn-primary flex-shrink-0 dropdown-toggle d-lg-inline-block d-none" data-bs-toggle="dropdown">Enviar anuncio</button> -->
+										<!-- <div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Add New Contact</a>
+											<a class="dropdown-item" href="#">Add New Department</a>
+											<a class="dropdown-item" href="#">Add Category</a>
+											<a class="dropdown-item" href="#">Add New Tag</a>
+										</div> -->
+									</div>
 								</div>
-								<div class="todo-options-wrap">	
-									<form class="d-sm-block d-none" role="search">
-										<input type="text" class="form-control" placeholder="Buscar en publicaciones">
-									</form>
-									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Collapse">
+								<div class="contact-options-wrap">	
+									<a class="btn btn-icon btn-flush-dark flush-soft-hover dropdown-toggle no-caret active" href="#" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="list"></i></span></span></a>
+									<div class="dropdown-menu dropdown-menu-end">
+										<a class="dropdown-item" href="employes-list.html"><span class="feather-icon dropdown-icon"><i data-feather="list"></i></span><span>vista lista</span></a>
+										<a class="dropdown-item active" href="employes.html"><span class="feather-icon dropdown-icon"><i data-feather="grid"></i></span><span>Vista grid </span></a>
+										<!-- <a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="server"></i></span><span>Compact View</span></a> -->
+									</div>
+									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover no-caret d-sm-inline-block d-none" href="#" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Refresh"><span class="icon"><span class="feather-icon"><i data-feather="refresh-cw"></i></span></span></a>
+									<div class="v-separator d-lg-block d-none"></div>
+									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret d-lg-inline-block d-none ms-sm-0" href="#" data-bs-toggle="dropdown"><span class="icon" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Manage Contact"><span class="feather-icon"><i data-feather="settings"></i></span></span></a>
+									<div class="dropdown-menu dropdown-menu-end">
+										<!-- <a class="dropdown-item" href="#">Manage Contact</a> -->
+										<a class="dropdown-item" href="#">Importar</a>
+										<a class="dropdown-item" href="#">Exportar</a>
+										<div class="dropdown-divider"></div>
+										<!-- <a class="dropdown-item" href="#">Send Messages</a> -->
+										<!-- <a class="dropdown-item" href="#">Delegate Access</a> -->
+									</div>
+									<!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret  d-lg-inline-block d-none" href="#" data-bs-toggle="dropdown"><span class="icon" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="More"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+									<div class="dropdown-menu dropdown-menu-end">
+										<a class="dropdown-item" href="profile.html"><span class="feather-icon dropdown-icon"><i data-feather="star"></i></span><span>Stared Contacts</span></a>
+										<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="archive"></i></span><span>Archive Contacts</span></a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="email.html"><span class="feather-icon dropdown-icon"><i data-feather="slash"></i></span><span>Block Content</span></a>
+										<a class="dropdown-item" href="email.html"><span class="feather-icon dropdown-icon"><i data-feather="external-link"></i></span><span>Feedback</span></a>
+									</div> -->
+									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none" href="#" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Collapse">
 										<span class="icon">
 											<span class="feather-icon"><i data-feather="chevron-up"></i></span>
 											<span class="feather-icon d-none"><i data-feather="chevron-down"></i></span>
@@ -993,106 +1089,652 @@ Contact: contact@hencework.com
 								</div>
 								<!-- <div class="hk-sidebar-togglable"></div> -->
 							</header>
-							<div class="todo-body">
-
-								<div data-simplebar class="col-lg-4">
-									<header class="task-header">
-										<!-- <div class="d-flex align-items-center">
-											<div id="sparkline_chart_7"></div>
-											<div class="form-check mx-lg-3 ms-3">
-												<input type="checkbox" class="form-check-input" id="customCheckcTask" checked>
-												<label class="form-check-label d-lg-inline d-none" for="customCheckcTask">Mark as completed</label>
-											</div>
-											<button class="btn btn-flush-light flush-outline-hover d-lg-inline-block d-none"><span><span class="icon"><span class="feather-icon"><i data-feather="link"></i></span></span><span>Copy Link</span></span></button>
-											<button class="btn btn-icon btn-light btn-rounded d-lg-none d-lg-inline-block ms-1"><span><span class="icon"><span class="feather-icon"><i data-feather="link"></i></span></span></span></button>
-										</div> -->
-										<!-- <div class="task-options-wrap">	
-											<span class="task-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>
-											<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret ms-1" href="#" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-											<div class="dropdown-menu dropdown-menu-end">
-												<h6 class="dropdown-header">Action</h6>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="edit"></i></span><span>Assign to</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="user"></i></span><span>Attach files</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="paperclip"></i></span><span>Apply Labels</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="tag"></i></span><span>Set Due Date</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="calendar"></i></span><span>Follow Task</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="bookmark"></i></span><span>Set Due Date</span></a>
-												<div class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="arrow-up"></i></span><span>Set as Top Priority</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="repeat"></i></span><span>Change Status</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="pocket"></i></span><span>Save as Template</span></a>
-												<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="archive"></i></span><span>Move to archive</span></a>
-												<a class="dropdown-item delete-task" href="#"><span class="feather-icon dropdown-icon"><i data-feather="trash-2"></i></span><span>Delete</span></a>
-											</div>
-											<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover close-task-info" href="#" ><span class="icon"><span class="feather-icon"><i data-feather="x"></i></span></span></a>
-										</div> -->
-									</header>
-									<div class="task-detail-body">
-										
-										<div class="profile-img-wrap">
-											<img class="img-fluid rounded-5" src="dist/img/profile-bg.jpg" alt="Image Description">
-										</div>
-										<div class="profile-intro">
-											<div class="card card-flush mw-400p bg-transparent">
-												<div class="card-body">
-													<div class="avatar avatar-xxl avatar-rounded position-relative mb-2">
-														<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img border border-4 border-white">
-														<span class="badge badge-indicator badge-success  badge-indicator-xl position-bottom-end-overflow-1 me-1"></span>
+							<div class="contact-body">
+								<div data-simplebar class="nicescroll-bar">
+									<div class="collapse" id="collapseQuick">
+										<div class="quick-access-form-wrap">
+											<form class="quick-access-form border">
+												<div class="row gx-3">
+													<div class="col-xxl-10">
+														<div class="position-relative">
+															<div class="dropify-square">
+																<input type="file"  class="dropify-1"/>
+															</div>
+															<div class="col-md-12">
+																<div class="row gx-3">
+																	<div class="col-lg-4">
+																		<div class="form-group">
+																			<input class="form-control" placeholder="First name*" value="" type="text">
+																		</div>
+																		<div class="form-group">
+																			<input class="form-control" placeholder="Last name*" value="" type="text">
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<div class="form-group">
+																			<input class="form-control" placeholder="Email Id*" value="" type="text">
+																		</div>
+																		<div class="form-group">
+																			<input class="form-control" placeholder="Phone" value="" type="text">
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<div class="form-group">
+																			<input class="form-control" placeholder="Department" value="" type="text">
+																		</div>
+																		<div class="form-group">
+																			<select id="input_tags" class="form-control" multiple="multiple">
+																				<option selected="selected">Collaborator</option>
+																				<option>Designer</option>
+																				<option selected="selected">Developer</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
 													</div>
-													<h4>Kate Jones
-														<i class="bi-check-circle-fill fs-6 text-blue" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Top endorsed"></i>
-													</h4>
-													<p>
-														Venenatis tellus in metus vulputate
-													</p>
-													<ul class="list-inline fs-7 mt-2 mb-0">
-														<li class="list-inline-item d-sm-inline-block d-block mb-sm-0 mb-1 me-3">
-														  <i class="bi bi-briefcase me-1"></i>
-														  <a href="#">Co-Founder,</a>
-														  <a href="#">Jampack</a>
-														</li>
-										  
-														<li class="list-inline-item d-sm-inline-block d-block mb-sm-0 mb-1 me-3">
-															<i class="bi bi-geo-alt me-1"></i>
-															<a href="#">San Francisco,</a>
-															<a href="#">US</a>
-														  </li>
-													</ul>
+													<<div class="col-xxl-2">
+														<div class="form-group">
+															<button data-bs-toggle="collapse"  data-bs-target="#collapseExample" aria-expanded="false" class="btn btn-block btn-primary ">Create New
+															</button>
+														</div>
+														<div class="form-group">
+															<button data-bs-toggle="collapse" disabled  data-bs-target="#collapseExample" aria-expanded="false" class="btn btn-block btn-secondary">Discard
+															</button>
+														</div>
+													</div>>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="contact-card-view">
+										<div class="row">
+											<div class="col-7 mb-3">
+												<!-- <div class="contact-toolbar-left">
+													<div class="d-xxl-flex d-none align-items-center form-group mb-0">
+														<select class="form-select form-select-sm w-120p">
+															<option selected="">Bulk actions</option>
+															<option value="1">Edit</option>
+															<option value="2">Move to trash</option>
+														</select>
+														<button class="btn btn-sm btn-light ms-2">Apply</button>
+													</div>
+													<div class="d-xxl-flex d-none align-items-center form-group mb-0">
+														<label class="flex-shrink-0 mb-0 me-2">Sort by:</label> 
+														<select class="form-select form-select-sm w-130p">
+															<option selected="">Date Created</option>
+															<option value="1">Date Edited</option>
+															<option value="2">Frequent Contacts</option>
+															<option value="3">Recently Added</option>
+														</select>
+													</div>
+													<select class="d-flex align-items-center w-130p form-select form-select-sm">
+														<option selected="">Export to CSV</option>
+														<option value="2">Export to PDF</option>
+														<option value="3">Send Message</option>
+														<option value="4">Delegate Access</option>
+													</select>
+												</div> -->
+											</div>
+											<div class="col-5 mb-3">
+												<div class="contact-toolbar-right">
+													<div id="datable_1_filter" class="dataTables_filter"><label><input type="search" class="form-control form-control-sm" placeholder="Buscar  colaborador"></label></div>
+													<div class="dataTables_length" id="datable_1_length">
+														<label>
+															View  
+															<select name="datable_1_length" class="form-select form-select-sm">
+																<option value="10">10</option>
+																<option value="25">25</option>
+																<option value="50">50</option>
+																<option value="100">100</option>
+															</select>
+														</label>
+													</div>
+													<div class="dataTables_info" id="datable_1_info" role="status" aria-live="polite">1 - 10 of 11</div>
+													<div class="dataTables_paginate paging_simple_numbers" id="datable_1_paginate">
+														<ul class="pagination custom-pagination pagination-simple m-0">
+															<li class="paginate_button page-item previous disabled" id="datable_1_previous"><a href="#" data-dt-idx="0" tabindex="0" class="page-link"><i class="ri-arrow-left-s-line"></i></a></li>
+															<li class="paginate_button page-item active"><a href="#" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+															<li class="paginate_button page-item "><a href="#" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+															<li class="paginate_button page-item next" id="datable_1_next"><a href="#" data-dt-idx="3" tabindex="0" class="page-link"><i class="ri-arrow-right-s-line"></i></a></li>
+														</ul>
+													</div>
 												</div>
 											</div>
 										</div>
-
-										<div class="alert alert-primary alert-wth-icon fade show mb-4" role="alert">
-											<span class="alert-icon-wrap"><span class="feather-icon"><i class="zmdi zmdi-lock"></i></span></span> This task is private for Jampack Team
+										<div class="row gx-3 row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 mb-5">
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Morgan Freeman</div>
+														<div class="user-email">morgan@jampack.com</div>
+														<div class="user-contact">+145 52 5689</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Huma Therman</div>
+														<div class="user-email">huma@clariesup.au</div>
+														<div class="user-contact">+234 48 2365</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Developer</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-soft-primary avatar-rounded">
+															<span class="initial-wrap">C</span>
+														</div>
+														<div class="user-name"><span class="contact-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>Charlie Chaplin</div>
+														<div class="user-email">charlie@leernoca.monster</div>
+														<div class="user-contact">+741 56 1916</div>
+														<div class="user-desg"><span class="badge badge-danger badge-indicator badge-indicator-lg me-2"></span> Inventory</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar10.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Winston Churchil</div>
+														<div class="user-email">winston@worthniza.ga</div>
+														<div class="user-contact">+145 52 5463</div>
+														<div class="user-desg"><span class="badge badge-danger badge-indicator badge-indicator-lg me-2"></span> Human Resource</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>Jaquiline Joker</div>
+														<div class="user-email">contact@hencework.com</div>
+														<div class="user-contact">+91-34-2636-1916</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar7.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Tom Cruz</div>
+														<div class="user-email">tomcz@jampack.com</div>
+														<div class="user-contact">+456 52 4862</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Developer</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-soft-danger avatar-rounded">
+															<span class="initial-wrap">D</span>
+														</div>
+														<div class="user-name"><span class="contact-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>Daniel Craig</div>
+														<div class="user-email">danialc@jampack.com</div>
+														<div class="user-contact">+145 52 1916</div>
+														<div class="user-desg"><span class="badge badge-success badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>Katharine Jones</div>
+														<div class="user-email">joneskath@jampack.com</div>
+														<div class="user-contact">+741 56 1916</div>
+														<div class="user-desg"><span class="badge badge-danger badge-indicator badge-indicator-lg me-2"></span> Inventory</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-primary avatar-rounded">
+															<span class="initial-wrap">H</span>
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Hencework</div>
+														<div class="user-email">contact@hencework.com</div>
+														<div class="user-contact">+145 52 5478</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar13.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Daniel Raynolds</div>
+														<div class="user-email">danialraynolds@hencework.com</div>
+														<div class="user-contact">+145 36 1916</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-light avatar-rounded">
+															<span class="initial-wrap">J</span>
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>John Brother</div>
+														<div class="user-email">john@cryodrakan.info</div>
+														<div class="user-contact">+456 52 1916</div>
+														<div class="user-desg"><span class="badge badge-danger badge-indicator badge-indicator-lg me-2"></span> Human Resource</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar15.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>Dean Shaw</div>
+														<div class="user-email">dean-shaw@pown.me</div>
+														<div class="user-contact">+234 48 1916</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar11.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star marked"><span class="feather-icon"><i data-feather="star"></i></span></span>Cavin Spancy</div>
+														<div class="user-email">cavins11@budgequot.press</div>
+														<div class="user-contact">+234 48 1916</div>
+														<div class="user-desg"><span class="badge badge-primary badge-indicator badge-indicator-lg me-2"></span> Design</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar14.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Justin Bieber</div>
+														<div class="user-email">justin@tulberga.ga</div>
+														<div class="user-contact">+745 56 1916</div>
+														<div class="user-desg"><span class="badge badge-danger badge-indicator badge-indicator-lg me-2"></span> Inventory</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="card card-border contact-card">
+													<div class="card-body text-center">
+														<div class="card-action-wrap">
+															<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" aria-expanded="false" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+															<div class="dropdown-menu  dropdown-menu-end" role="menu">
+																<!-- <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a>
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a> -->
+																<a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Borrar</a>
+															</div>
+														</div>	
+														<div class="avatar avatar-xl avatar-rounded">
+															<img src="dist/img/avatar5.jpg" alt="user" class="avatar-img">
+														</div>
+														<div class="user-name"><span class="contact-star"><span class="feather-icon"><i data-feather="star"></i></span></span>Auston Kutcher</div>
+														<div class="user-email">auston@cutcher.com</div>
+														<div class="user-contact">+145 52 1916</div>
+														<div class="user-desg"><span class="badge badge-warning badge-indicator badge-indicator-lg me-2"></span> Human Resource</div>
+													</div>
+													<div class="card-footer text-muted position-relative">
+														<!-- <a href="#" class="d-flex align-items-center">
+															<span class="feather-icon me-2"><i data-feather="inbox"></i></span>
+															<span class="fs-7 lh-1">Mensaje</span>
+														</a> -->
+														<div class="v-separator-full m-0"></div>
+														<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contact_detail">
+															<span class="feather-icon me-2"><i data-feather="user-check"></i></span>
+															<span class="fs-7 lh-1">Ver perfil</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										
 										</div>
-										<h4 class="d-flex align-items-center fw-bold mb-0 inline-editable-wrap"><span class="editable">Framworking Building</span><a class="btn btn-sm btn-icon btn-flush-light btn-rounded flush-soft-hover edit-tyn ms-1" href="#"><span class="icon"><span class="feather-icon"><i data-feather="edit-2"></i></span></span></a></h4>
-										<p  class="d-flex align-items-center inline-editable-wrap"><span class="editable">Instant rebuilding of assets during development</span><a class="btn btn-sm btn-icon btn-flush-light btn-rounded flush-soft-hover edit-tyn ms-1" href="#"><span class="icon"><span class="feather-icon"><i data-feather="edit-2"></i></span></span></a></p>
-										<!-- <div class="avatar-group avatar-group avatar-group-overlapped mt-3">
-											<div class="avatar avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Katharine">
-												<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
+										
+										<div class="row">
+											<div class="d-flex align-items-center col-sm-12 col-md-5 justify-content-center justify-content-md-start">
+												<div class="dataTables_info">1 - 10 of 30</div>
 											</div>
-											<div class="avatar avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Dean">
-												<img src="dist/img/avatar13.jpg" alt="user" class="avatar-img">
+											<div class="col-sm-12 col-md-7">
+												<ul class="pagination custom-pagination pagination-simple mb-0 justify-content-center justify-content-md-end">
+													<li class="paginate_button page-item previous disabled"><a href="#" data-dt-idx="0" tabindex="0" class="page-link"><i class="ri-arrow-left-s-line"></i></a></li>
+													<li class="paginate_button page-item active"><a href="#" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+													<li class="paginate_button page-item "><a href="#" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+													<li class="paginate_button page-item next"><a href="#" data-dt-idx="4" tabindex="0" class="page-link"><i class="ri-arrow-right-s-line"></i></a></li>
+												</ul>
 											</div>
-											<div class="avatar avatar-xs avatar-soft-danger avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Tom">
-												<span class="initial-wrap">T</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Contact Details -->
+						<div id="contact_detail" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-xl contact-detail-modal" role="document">
+								<div class="modal-content">
+									<div class="modal-body p-0">
+										<header class="contact-header">
+											<div class="d-flex align-items-center">
+												<div class="dropify-circle edit-img me-3">
+													<input type="file"  class="dropify-1" data-default-file="dist/img/avatar3.jpg"/>
+												</div>
+												<div>
+													<div class="cp-name text-truncate">Lucia Rodriguez</div>
+													<p>email@dominio.com</p>
+													<div class="rating rating-yellow my-rating-4" data-rating="3"></div>
+												</div>
 											</div>
-											<div class="avatar avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Morgan">
-												<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-											</div>
-											<div class="avatar avatar-icon avatar-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add new">
-												<span class="initial-wrap"><span class="feather-icon"><i data-feather="plus"></i></span></span>
-											</div>
-										</div>	 -->
-										<form class="row">
-											<!-- <div class="col-md-6">
-												<div class="title title-wth-divider my-4"><span>Due Date</span></div>
-												<input class="form-control" type="text" name="single-date" />
-											</div> -->
-											<!-- <div class="col-md-6">
-												<div class="title title-wth-divider my-4"><span>Status</span></div>
-												<div class="dropdown">
-													<button aria-expanded="false" data-bs-toggle="dropdown" class="btn btn-warning btn-rounded dropdown-toggle" type="button">In Progress</button>
+											<div class="contact-options-wrap">	
+												<ul class="hk-list hk-list-sm justify-content-center d-xl-flex d-none">
+													<li>
+														<a class="btn btn-icon btn-soft-primary btn-rounded" href="#"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="mail"></i></span></span></a>
+													</li>
+													<li>
+														<a class="btn btn-icon btn-soft-success btn-rounded" href="#"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="phone"></i></span></span></a>
+													</li>
+													<li>
+														<a class="btn btn-icon btn-soft-danger btn-rounded" href="#"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="video"></i></span></span></a>
+													</li>
+												</ul>
+												<div class="dropdown mx-3  d-xl-block d-none">
+													<button aria-expanded="false" data-bs-toggle="dropdown" class="btn btn-light dropdown-toggle " type="button">Action</button>
 													<div role="menu" class="dropdown-menu">
 														<a class="dropdown-item" href="#">Action</a>
 														<a class="dropdown-item" href="#">Another action</a>
@@ -1101,116 +1743,26 @@ Contact: contact@hencework.com
 														<a class="dropdown-item" href="#">Separated link</a>
 													</div>
 												</div>
-											</div> -->
-											<!-- <div class="col-md-12">
-												<div class="title title-wth-divider my-4"><span>Labels</span></div>
-												<input type="text" id="exist_values1" class="user-input-tagged form-control" name="tag-3" value="Framework,Html" placeholder="Add Chips">
-											</div> -->
-										</form>
-										<ul class="nav nav-justified nav-light nav-tabs nav-segmented-tabs active-theme mt-4">
-											<li class="nav-item">
-												<a class="nav-link active" data-bs-toggle="tab" href="#tab_checklist">
-													<span class="nav-link-text">Mi perfil</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" data-bs-toggle="tab" href="#tab_comments">
-													<span class="nav-link-text badge-on-text">Pagos</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" data-bs-toggle="tab" href="#tab_files">
-													<span class="nav-link-text badge-on-text">Solicitudes</span>
-												</a>
-											</li>
-											<!-- <li class="nav-item">
-												<a class="nav-link" data-bs-toggle="tab" href="#tab_activity">
-													<span class="nav-link-text badge-on-text">Activity</span>
-												</a>
-											</li> -->
-										</ul>
-										<div class="tab-content mt-7">
-											<div class="tab-pane fade show active" id="tab_checklist">
-												<div class="d-flex align-items-center justify-content-between mb-2">
-													<div class="title title-lg mb-0"><span>Información de colaborador</span></div>
-													<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add Category"><span class="icon"><span class="feather-icon"><i data-feather="plus"></i></span></span></a>
+												<div class="align-items-center d-xl-flex d-none">1 - 10 of 30</div>
+												<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover contactapp-info-toggle  d-xl-inline-block d-none" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Previous"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="chevron-left"></i></span></span></a>
+												<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover contactapp-info-toggle  d-xl-inline-block d-none" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Next"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="chevron-right"></i></span></span></a>
+												<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret  d-xl-inline-block d-nonet" href="#" data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span></a>
+												<div class="dropdown-menu dropdown-menu-end">
+													<a class="dropdown-item" href="profile.html"><span class="feather-icon dropdown-icon"><i data-feather="star"></i></span><span>Stared Messages</span></a>
+													<a class="dropdown-item" href="#"><span class="feather-icon dropdown-icon"><i data-feather="archive"></i></span><span>Archive Messages</span></a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="email.html"><span class="feather-icon dropdown-icon"><i data-feather="slash"></i></span><span>Block Content</span></a>
+													<a class="dropdown-item" href="email.html" data-bs-dismiss="modal"><span class="feather-icon dropdown-icon"><i data-feather="x-square"></i></span><span>Close</span></a>
 												</div>
-												<div class="hk-checklist">
-													<div class="form-check">
-														<input type="checkbox" class="form-check-input" id="customCheckList1" checked="">
-														<label class="form-check-label" for="customCheckList1">
-															Video conference with canada Team
-															<span class="done-strikethrough"></span>
-														</label>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-													<div class="form-check">
-														<input type="checkbox" class="form-check-input" id="customCheckList2" checked="">
-														<label class="form-check-label" for="customCheckList2">
-															Client objective meeting
-															<span class="done-strikethrough"></span>
-														</label>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-													<div class="form-check">
-														<input type="checkbox" class="form-check-input" id="customCheckList3" checked="">
-														<label class="form-check-label" for="customCheckList3">
-															Upgrade dependency on resources
-															<span class="done-strikethrough"></span>
-														</label>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-													<div class="form-check">
-														<input type="checkbox" class="form-check-input" id="customCheckList4">
-														<label class="form-check-label" for="customCheckList4">
-															Invite jaqueline on video conference
-															<span class="done-strikethrough"></span>
-														</label>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-													<a href="#" class="d-flex align-items-center add-new-checklist">
-														<span class="feather-icon fe-x me-2"><i data-feather="plus-square"></i></span>
-														<span>New Item</span>
-													</a>
-												</div>
-												<div class="d-flex align-items-center justify-content-between">
-													<div class="title title-wth-divider flex-grow-1 my-4 me-2"><span>Canada team task</span></div>
-													<div>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit"><span class="icon"><span class="feather-icon"><i data-feather="edit-2"></i></span></span></a>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-												</div>
-												<div class="hk-checklist">
-													<div class="form-check">
-														<input type="checkbox" class="form-check-input" id="customCheckList5" checked="">
-														<label class="form-check-label" for="customCheckList5">
-															Upgrade dependency on resources
-															<span class="done-strikethrough"></span>
-														</label>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-													<div class="form-check">
-														<input type="checkbox" class="form-check-input" id="customCheckList6">
-														<label class="form-check-label" for="customCheckList6">
-															Invite jaqueline on video conference
-															<span class="done-strikethrough"></span>
-														</label>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-flush-light flush-soft-hover delete-checklist"><span class="icon"><span class="feather-icon"><i data-feather="trash-2"></i></span></span></a>
-													</div>
-													<a href="#" class="d-flex align-items-center add-new-checklist">
-														<span class="feather-icon fe-x me-2"><i data-feather="plus-square"></i></span>
-														<span>New Item</span>
-													</a>
-												</div>
-												<div class="d-flex align-items-center justify-content-between mt-5 mb-2">
-													<div class="title title-lg mb-0"><span>Notes</span></div>
-													<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add Category"><span class="icon"><span class="feather-icon"><i data-feather="plus"></i></span></span></a>
-												</div>
-												<div class="card card-border note-block bg-orange-light-5">
-													<div class="card-body">
-														<div class="card-action-wrap">
-															<button class="btn btn-xs btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" aria-expanded="false" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></button>
-															<div role="menu" class="dropdown-menu dropdown-menu-end">
+											</div>
+										</header>
+										<div class="contact-body contact-detail-body">
+											<div data-simplebar class="nicescroll-bar">
+												<div class="d-flex flex-xl-nowrap flex-wrap">
+													<div class="contact-info w-xl-35 w-100">
+														<div class="dropdown action-btn">
+															<button aria-expanded="false" data-bs-toggle="dropdown" class="btn btn-light dropdown-toggle " type="button">Action</button>
+															<div role="menu" class="dropdown-menu">
 																<a class="dropdown-item" href="#">Action</a>
 																<a class="dropdown-item" href="#">Another action</a>
 																<a class="dropdown-item" href="#">Something else here</a>
@@ -1218,175 +1770,216 @@ Contact: contact@hencework.com
 																<a class="dropdown-item" href="#">Separated link</a>
 															</div>
 														</div>
-														<div class="media align-items-center">
-															<div class="media-head">
-																<div class="avatar avatar-xs avatar-rounded">
-																	<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-																</div>
-															</div>
-															<div class="media-body">
-																<div>Martin Luther</div>
-																<div>9 Apr, 20, 7:14 AM</div>
-															</div>
-														</div>
-														<p>@<a href="#" class="fw-medium">Charlie Darvin</a> From there, you can run grunt compile, grunt migrate and grunt test to compile your contracts, deploy those contracts to the network, and run their associated unit tests.</p>
-													</div>
-												</div>
-												<div class="card card-border note-block bg-orange-light-5">
-													<div class="card-body">
-														<div class="card-action-wrap">
-															<button class="btn btn-xs btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" aria-expanded="false" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></button>
-															<div role="menu" class="dropdown-menu dropdown-menu-end">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#">Another action</a>
-																<a class="dropdown-item" href="#">Something else here</a>
-																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#">Separated link</a>
-															</div>
-														</div>
-														<div class="media align-items-center">
-															<div class="media-head">
-																<div class="avatar avatar-xs avatar-rounded">
-																	<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
-																</div>
-															</div>
-															<div class="media-body">
-																<div>Katherine Jones</div>
-																<div>8 Apr, 20, 5:30 PM</div>
-															</div>
-														</div>
-														<p>@<a href="#" class="fw-medium">Martin Luther</a> Viscosity ratio for "Appear view" link text is 3.7:1 which is less </p>
-													</div>
-												</div>
-												<a href="#" class="btn btn-outline-light btn-block">View more</a>
-											</div>
-											<div class="tab-pane fade" id="tab_comments">
-												<div class="d-flex align-items-center justify-content-between mb-2">
-													<div class="title title-lg mb-0"><span>3 Responses</span></div>
-													<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add Board"><span class="icon"><span class="feather-icon"><i data-feather="plus"></i></span></span></a>
-												</div>
-												<div class="comment-block">
-													<div class="media">
-														<div class="media-head">
-															<div class="avatar avatar-xs avatar-rounded">
-																<img src="dist/img/avatar4.jpg" alt="user" class="avatar-img">
-															</div>
-														</div>
-														<div class="media-body">
-															<div>
-																<span class="cm-name">Martin Luther</span>
-																<span class="badge badge-soft-violet">Manager</span>
-															</div>
-															<p>@<a href="#" class="fw-medium">Charlie Darvin</a> From there, you can run truffle compile, truffle migrate and truffle test to compile your contracts, deploy those contracts to the network, and run their associated unit tests.</p>
-															<div class="comment-action-wrap mt-3">
-																<span>3 hours ago</span>
-																<span class="comment-dot-sep">●</span>
-																<a href="#">Reply</a>
-																<span class="comment-dot-sep">●</span>
-																<a href="#">Like</a>
-															</div>
-														</div>
-													</div>
-													<div class="separator separator-light"></div>
-													<div class="media">
-														<div class="media-head">
-															<div class="avatar avatar-xs avatar-rounded">
-																<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-															</div>
-														</div>
-														<div class="media-body">
-															<div>
-																<span class="cm-name">Katherine Jones</span>
-															</div>
-															<p>Dynamically beautiful work done by @<a href="#" class="fw-medium">Ashton Kutcher</a></p>
-															<div class="comment-action-wrap mt-3">
-																<span>3 hours ago</span>
-																<span class="comment-dot-sep">●</span>
-																<a href="#">Reply</a>
-																<span class="comment-dot-sep">●</span>
-																<a href="#">Like</a>
-															</div>
-															<div class="media">
-																<div class="media-head">
-																	<div class="avatar avatar-xs avatar-rounded">
-																		<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
-																	</div>
-																</div>
-																<div class="media-body">
-																	<div>
-																		<span class="cm-name">Ashton Kutche</span>
-																		<span class="badge badge-soft-danger">Designer</span>
-																	</div>
-																	<p>@<a href="#" class="fw-medium">Katherine Jones</a> Thank you :)</p>
-																	<div class="comment-action-wrap mt-3">
-																		<span>3 hours ago</span>
-																		<span class="comment-dot-sep">●</span>
-																		<a href="#">Reply</a>
-																		<span class="comment-dot-sep">●</span>
-																		<a href="#">Like</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="separator separator-light"></div>
-													<form>
-														<div class="form-group">
-															<label class="form-label">Add Comment</label>
-															<textarea class="form-control" rows="5"></textarea>
-														</div>
-														<div class="d-flex align-items-center justify-content-between">
-															<button class="btn btn-primary">Send</button>
-															<small class="form-text text-muted mt-0">Basic HTML is allowed</small>
-														</div>
-													</form>
-												</div>
-											</div>
-											<div class="tab-pane fade" id="tab_files">
-												<div class="row">
-													<div class="col-sm">
-														<form action="#" class="dropzone" id="remove_link">
-															<div class="fallback">
-																<input name="file" type="file" multiple />
-															</div>
-														</form>
-													</div>
-												</div>
-												<div class="mt-5 mb-2">
-													<div class="title title-lg mb-0"><span>Shared files</span></div>
-												</div>
-												<div class="file-block">
-													<div class="collapse-simple">
 														<div class="card">
 															<div class="card-header">
-																<a role="button" data-bs-toggle="collapse" href="#files_collapse" aria-expanded="true">Yesterday</a>
+																<a href="#">Perfil</a>
+																<!-- <button class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit"><span class="icon"><span class="feather-icon"><i data-feather="edit-2"></i></span></span></button> -->
 															</div>
-															<div id="files_collapse" class="collapse show">
-																<div class="card-body">
-																	<ul class="sh-files">
+															<div class="card-body">
+																<ul class="cp-info">
+																	<li>
+																		<span>Nombres</span>
+																		<span>Morgan</span>
+																	</li>
+																	<li>
+																		<span>Apellidos</span>
+																		<span>Freeman</span>
+																	</li>
+																	<li>
+																		<span>Email</span>
+																		<span>morgan@flights.com</span>
+																	</li>
+																	<li>
+																		<span>Teléfono</span>
+																		<span>+912-4532-1234</span>
+																	</li>
+																	<li>
+																		<span>Dirección</span>
+																		<span>Newyork</span>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="separator-full"></div>
+														<div class="card">
+															<div class="card-header">
+																<a href="#">Contacto</a>
+																<!-- <button class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit"><span class="icon"><span class="feather-icon"><i data-feather="edit-2"></i></span></span></button> -->
+															</div>
+															<div class="card-body">
+																<ul class="cp-info">
+																	<li>
+																		<span>Designation</span>
+																		<span>Morgan</span>
+																	</li>
+																	<li>
+																		<span>Company</span>
+																		<span>Freeman</span>
+																	</li>
+																	<li>
+																		<span>Language</span>
+																		<span>morgan@flights.com</span>
+																	</li>
+																	<li>
+																		<span>Birthday</span>
+																		<span>-</span>
+																	</li>
+																	<li>
+																		<span>Location</span>
+																		<span>Newyork</span>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<!-- <div class="separator-full"></div> -->
+														<!-- <div class="card">
+															<div class="card-header">
+																<a href="#">Tags</a>
+																<button class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add Tags"><span class="icon"><span class="feather-icon"><i data-feather="plus"></i></span></span></button>
+															</div>
+															<div class="card-body">
+																<span class="badge badge-soft-violet">Collaboration</span>
+																<span class="badge badge-soft-danger">React Developer</span>
+															</div>
+														</div> -->
+														<!-- <div class="separator-full"></div> -->
+														<!-- <div class="card">
+															<div class="card-header">
+																<a href="#">Social Profile</a>
+															</div>
+															<div class="card-body">
+																<ul class="hk-list hk-list-sm">
+																	<li>
+																		<button class="btn btn-icon btn-rounded btn-primary"><span class="icon"><i class="fab fa-behance"></i></span></button>
+																	</li>
+																	<li>
+																		<button class="btn btn-icon btn-rounded btn-warning"><span class="icon"><i class="fab fa-google-drive"></i></span></button>
+																	</li>
+																	<li>
+																		<button class="btn btn-icon btn-rounded btn-info"><span class="icon"><i class="fab fa-dropbox"></i></span></button>
+																	</li>
+																	<li>
+																		<button class="btn btn-icon btn-rounded btn-dark"><span class="icon"><i class="fab fa-github"></i></span></button>
+																	</li>
+																</ul>
+															</div>
+														</div> -->
+														<div class="separator-full"></div>
+														<div class="card">
+															<div class="card-header">
+																<a href="#">Otra información</a>
+																<!-- <button class="btn btn-xs btn-icon btn-rounded btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit"><span class="icon"><span class="feather-icon"><i data-feather="edit-2"></i></span></span></button> -->
+															</div>
+															<div class="card-body">
+																<p>informacion extra</p>
+																<!-- <p>Hello there, Morgan Freeman is a full-stack frontend developer working under pressure is his quality.</p> -->
+															</div>
+														</div>
+														<div class="separator-full"></div>
+														<div class="card">
+															<div class="card-header">
+																<a href="#">Ajustes</a>
+															</div>
+															<div class="card-body">
+																<ul class="cp-action">
+																	<!-- <li>
+																		<a href="javascript:void(0);">
+																			<span class="cp-icon-wrap"><span class="feather-icon"><i data-feather="upload"></i></span></span>
+																			Share Contact
+																		</a>
+																	</li>
+																	<li>
+																		<a href="javascript:void(0);">
+																			<span class="cp-icon-wrap"><span class="feather-icon"><i data-feather="heart"></i></span></span>
+																			Add to Favourites
+																		</a>
+																	</li> -->
+																	<li>
+																		<a href="javascript:void(0);" class="link-danger">
+																			<span class="cp-icon-wrap"><span class="feather-icon"><i data-feather="trash"></i></span></span>
+																			Eliminar esta cuenta
+																		</a>
+																	</li>
+																</ul>	
+															</div>
+														</div>
+													</div>
+													<div class="contact-more-info">
+														<ul class="nav nav-tabs nav-line nav-icon nav-light">
+															<li class="nav-item">
+																<a class="nav-link active" data-bs-toggle="tab" href="#tab_summery">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="zap"></i></span></span>
+																	<span class="nav-link-text">Solicitudes</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#tab_payments">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="activity"></i></span></span>
+																	<span class="nav-link-text">Pagos</span>
+																</a>
+															</li>
+															<!-- <li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="edit-3"></i></span></span>
+																	<span class="nav-link-text">Notes</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="mail"></i></span></span>
+																	<span class="nav-link-text">Email</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="phone"></i></span></span>
+																	<span class="nav-link-text">Calls</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="check-square"></i></span></span>
+																	<span class="nav-link-text">Tasks</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="clock"></i></span></span>
+																	<span class="nav-link-text">Schedule</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-bs-toggle="tab" href="#">
+																	<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="shield"></i></span></span>
+																	<span class="nav-link-text">Sales</span>
+																</a>
+															</li> -->
+														</ul>
+														<div class="tab-content mt-7">
+															<div class="tab-pane fade show active" id="tab_summery">
+																<div class="activity-wrap mt-7">
+																	<div class="d-flex align-items-center justify-content-between mb-4">
+																		<div class="title-lg mb-0">Solicitudes</div>
+																		<!-- <select class="form-select mw-150p">
+																			<option selected="">All Activity</option>
+																			<option value="1">One</option>
+																			<option value="2">Two</option>
+																			<option value="3">Three</option>
+																		</select> -->
+																	</div>
+																	<div class="title-sm text-primary mb-3">June 24</div>
+																	<ul class="activity-thread">
 																		<li>
 																			<div class="media">
 																				<div class="media-head">
-																					<div class="avatar avatar-icon avatar-sm avatar-soft-blue">
-																						<span class="initial-wrap fs-3">
-																							<i class="ri-file-excel-2-fill"></i>
-																						</span>
+																					<div class="avatar avatar-icon avatar-sm avatar-primary avatar-rounded">
+																						<span class="initial-wrap"><span class="feather-icon"><i data-feather="mail"></i></span></span>
 																					</div>
 																				</div>
 																				<div class="media-body">
 																					<div>
-																						<p class="file-name">website_content.exl</p>
-																						<p class="file-size">2,635 KB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0 link-danger" href="#">Delete</a>
-																						</div>
+																						<div class="activity-text">You sent <span class="text-dark text-capitalize">1 message</span> to the contact.</div>
+																						<div class="activity-time">10.00 pm</div>
 																					</div>
 																				</div>
 																			</div>
@@ -1394,202 +1987,47 @@ Contact: contact@hencework.com
 																		<li>
 																			<div class="media">
 																				<div class="media-head">
-																					<div class="avatar avatar-icon avatar-sm avatar-soft-light">
-																						<span class="initial-wrap fs-3">
-																							<i class="ri-file-text-fill"></i>
-																						</span>
+																					<div class="avatar avatar-sm avatar-soft-danger avatar-rounded">
+																						<span class="initial-wrap">M</span>
 																					</div>
 																				</div>
 																				<div class="media-body">
 																					<div>
-																						<p class="file-name">jampack.pdf</p>
-																						<p class="file-size">1.3 GB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0 link-danger" href="#">Delete</a>
-																						</div>
+																						<div class="activity-text"><span class="text-dark text-capitalize">Morgan Freeman</span> as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled.</div>
+																						<div class="activity-time">10.00 pm</div>
 																					</div>
 																				</div>
 																			</div>
-																			
 																		</li>
 																		<li>
 																			<div class="media">
 																				<div class="media-head">
-																					<div class="avatar avatar-icon avatar-sm avatar-soft-warning">
-																						<span class="initial-wrap fs-3">
-																							<i class="ri-file-zip-fill"></i>
-																						</span>
+																					<div class="avatar  avatar-icon avatar-sm avatar-info avatar-rounded">
+																						<span class="initial-wrap"><span class="feather-icon"><i data-feather="shield"></i></span></span>
 																					</div>
 																				</div>
 																				<div class="media-body">
 																					<div>
-																						<p class="file-name">themeforest-pack.zip</p>
-																						<p class="file-size">2.45 GB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-soft-danger avatar-rounded me-2">
-																							<span class="initial-wrap">H</span>
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0 link-danger" href="#">Delete</a>
-																						</div>
+																						<div class="activity-text">Your deal value <span class="text-dark">$208.15</span> is paid through PayU Money online on <span class="text-dark">02.12.18</span> at <span class="text-dark">15:30, Monday</span></div>
+																						<div class="activity-time">10.00 pm</div>
 																					</div>
 																				</div>
 																			</div>
-																			
-																		</li>
-																		<li>
-																			<div class="media">
-																				<div class="media-head">
-																					<div class="avatar avatar-logo avatar-sm">
-																						<span class="initial-wrap">
-																							<img src="dist/img/6image.png" alt="user">
-																						</span>
-																					</div>
-																				</div>
-																				<div class="media-body">
-																					<div>
-																						<p class="file-name">bruce-mars-fiEG-Pk6ZASFPk6ZASF</p>
-																						<p class="file-size">4,178 KB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar5.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0 link-danger" href="#">Delete</a>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																			
-																		</li>
-																		<li>
-																			<div class="media">
-																				<div class="media-head">
-																					<div class="avatar avatar-logo avatar-sm">
-																						<span class="initial-wrap">
-																							<img src="dist/img/2image.png" alt="user">
-																						</span>
-																					</div>
-																				</div>
-																				<div class="media-body">
-																					<div>
-																						<p class="file-name">jonas-kakaroto-KIPqvvTKIPqvvT</p>
-																						<p class="file-size">951 KB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar6.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0 link-danger" href="#">Delete</a>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																			
 																		</li>
 																	</ul>
-																</div>
-															</div>
-														</div>
-														<div class="card">
-															<div class="card-header">
-																<a role="button" data-bs-toggle="collapse" href="#files_collapse_1" aria-expanded="true">23 April</a>
-															</div>
-															<div id="files_collapse_1" class="collapse show">
-																<div class="card-body">
-																	<ul class="sh-files">
+																	<div class="title-sm text-primary mt-5 mb-3">June 25</div>
+																	<ul class="activity-thread">
 																		<li>
 																			<div class="media">
 																				<div class="media-head">
-																					<div class="avatar avatar-icon avatar-sm avatar-soft-light">
-																						<span class="initial-wrap fs-3">
-																							<i class="ri-keynote-fill"></i>
-																						</span>
+																					<div class="avatar avatar-sm avatar-soft-danger avatar-rounded">
+																						<span class="initial-wrap">M</span>
 																					</div>
 																				</div>
 																				<div class="media-body">
 																					<div>
-																						<p class="file-name">presentation.keynote</p>
-																						<p class="file-size">20 KB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar5.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0 link-danger" href="#">Delete</a>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="media">
-																				<div class="media-head">
-																					<div class="avatar avatar-icon avatar-sm avatar-soft-warning">
-																						<span class="initial-wrap fs-3">
-																							<i class="ri-file-zip-fill"></i>
-																						</span>
-																					</div>
-																				</div>
-																				<div class="media-body">
-																					<div>
-																						<p class="file-name">PACK-TRIAL.zip</p>
-																						<p class="file-size">2.45 GB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0" href="#">Delete</a>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																			
-																		</li>
-																		<li>
-																			<div class="media">
-																				<div class="media-head">
-																					<div class="avatar avatar-sm">
-																						<img src="dist/img/img-thumb1.jpg" alt="user" class="avatar-img">
-																					</div>
-																				</div>
-																				<div class="media-body">
-																					<div>
-																						<p class="file-name">joel-mott-LaK153ghdigaghdi</p>
-																						<p class="file-size">3,028 KB</p>
-																					</div>
-																					<div>
-																						<div class="avatar avatar-xs avatar-rounded me-2">
-																							<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
-																						</div>
-																						<a href="#" class="btn btn-sm btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-vertical"></i></span></span></a>
-																						<div class="dropdown-menu dropdown-menu-end">
-																							<a class="dropdown-item ms-0" href="#">Download</a>
-																							<a class="dropdown-item ms-0" href="#">Delete</a>
-																						</div>
+																						<div class="activity-text"><span class="text-dark">Morgan Freeman</span> responded to your appointment schedule question. </div>
+																						<div class="activity-time">10.00 pm</div>
 																					</div>
 																				</div>
 																			</div>
@@ -1598,538 +2036,301 @@ Contact: contact@hencework.com
 																</div>
 															</div>
 														</div>
-													</div>
-												</div>
-											</div>
-											<div class="tab-pane fade" id="tab_activity">
-												<div class="mt-5 mb-2">
-													<div class="title title-lg mb-0"><span>Latest activity</span></div>
-												</div>
-												<div class="collapse-simple">
-													<div class="card">
-														<div class="card-header">
-															<a role="button" data-bs-toggle="collapse" href="#activity_1" aria-expanded="true">Today</a>
-														</div>
-														<div id="activity_1" class="collapse show">
-															<div class="card-body">
-																<ul class="activity-list list-group list-group-flush">
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-primary avatar-rounded">
-																					<span class="initial-wrap">H</span>
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Hencework</span> on Documentation link is working now - <a href="#" class="link-url"><u>ttps://hencework.com/theme/jampa</u></a></p>
-																				<div class="last-activity-time">Oct 15, 2021, 12:34 PM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-rounded">
-																					<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Morgan Fregman</span> completed react conversion of <a href="#" class="link-default"><u>components</u></a></p>
-																				<div class="last-activity-time">Sep 16, 2021, 4:54 PM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-rounded">
-																					<img src="dist/img/avatar13.jpg" alt="user" class="avatar-img">
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Jimmy Carry</span>completed side bar menu on <a href="#" class="link-default"><u>elements</u></a></p>
-																				<div class="last-activity-time">Sep 10, 2021, 10:13 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-rounded">
-																					<img src="dist/img/avatar7.jpg" alt="user" class="avatar-img">
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Charlie Chaplin</span> deleted empty cards on <a href="#" class="link-default"><u>completed</u></a></p>
-																				<div class="last-activity-time">Sep 10, 2021, 10:13 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="card">
-														<div class="card-header">
-															<a role="button" data-bs-toggle="collapse" href="#activity_2" aria-expanded="true">Yesterday</a>
-														</div>
-														<div id="activity_2" class="collapse show">
-															<div class="card-body">
-																<ul class="activity-list list-group list-group-flush">
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-soft-danger avatar-rounded">
-																					<span class="initial-wrap">W</span>
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Winston Churchills</span> created a note on UI components task list</p>
-																				<div class="last-activity-time">Sep 2, 2021, 9:23 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-rounded">
-																					<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Morgan Fregman</span> completed react conversion of <a href="#" class="link-default"><u>components</u></a></p>
-																				<div class="last-activity-time">Sep 16, 2021, 4:54 PM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-rounded">
-																					<img src="dist/img/avatar13.jpg" alt="user" class="avatar-img">
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Jimmy Carry</span>added shared components to <a href="#" class="link-default"><u>basic structure</u></a></p>
-																				<div class="last-activity-time">Sep 10, 2021, 10:13 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-primary avatar-rounded">
-																					<span class="initial-wrap">H</span>
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Hencework</span> commented on <a href="#" class="link-default"><u>basic structure</u></a></p>
-																				<div class="last-activity-time">Sep 10, 2021, 10:13 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-rounded">
-																					<img src="dist/img/avatar7.jpg" alt="user" class="avatar-img">
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Charlie Chaplin</span> moved components from all modules to in progress</p>
-																				<div class="last-activity-time">Sep 10, 2021, 10:13 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																	<li class="list-group-item">
-																		<div class="media">
-																			<div class="media-head">
-																				<div class="avatar avatar-xs avatar-soft-danger avatar-rounded">
-																					<span class="initial-wrap">W</span>
-																				</div>
-																			</div>
-																			<div class="media-body">
-																				<p><span class="text-dark">Winston Churchills</span> created a note on UI components task list</p>
-																				<div class="last-activity-time">Sep 10, 2021, 10:13 AM</div>
-																			</div>
-																		</div>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div data-simplebar class="col-lg-8">
-									<div class="card card-border card-profile-feed mb-lg-4 mb-3">
-										<div class="card-header card-header-action">
-											<div class="media align-items-center">
-												<div class="media-head me-2">
-													<div class="avatar avatar-sm avatar-rounded">
-														<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
-													</div>
-												</div>
-												<div class="media-body">
-													<div class="fw-medium text-dark">Huma Therman</div>
-													<div class="fs-7">25 Min</div>
-												</div>
-											</div>
-											<div class="card-action-wrap">
-												<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" href="#" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-horizontal"></i></span></span></a>
-												<div class="dropdown-menu dropdown-menu-end">
-													<a class="dropdown-item" href="#">Action</a>
-													<a class="dropdown-item" href="#">Another action</a>
-													<a class="dropdown-item" href="#">Something else here</a>
-													<div class="dropdown-divider"></div>
-													<a class="dropdown-item" href="#">Separated link</a>
-												</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<p class="card-text mb-5">There was that time artists at Sequence opted to hand-Sharpie the lorem ipsum passage on a line of paper bags they designed for Chipotle.</p>
-											<div class="card card-border">
-												<div class="position-relative">
-													<img class="card-img-top d-block" src="dist/img/gallery/mock12.jpg" alt="Card image cap">
-									
-												</div>
-												<div class="card-body">
-													
-													<h5>Bacon chicken turducken spare ribs.</h5>
-													<p class="card-text">Of course, we'd be remiss not to include the veritable cadre of lorem ipsum knock offs featuring: Bacon Ipsum, Hipster Ipsum, Corporate Ipsum, Legal Ipsum.</p>
-													<br/>
-													<a href="#" class="btn btn-dark btn-rounded btn-pg-link"><span><span class="icon"><span class="feather-icon"><i data-feather="link-2"></i></span></span><span>Website</span></span></a>
-
-												</div>
-											</div>
-										</div>
-										<!-- <div class="card-footer justify-content-between">
-											<div>
-												<a href="#"><i class="bi bi-heart-fill text-primary"></i>30K</a>
-											</div>
-											<div>
-												<a href="#">1K comments</a>
-												<a href="#">12 shares</a>
-											</div>
-										</div> -->
-									</div>
-									<div class="mb-lg-4 mb-lg-4 mb-3">
-										<div class="card card-border card-profile-feed mb-0 rounded-bottom-0">
-											<div class="card-header card-header-action">
-												<div class="media align-items-center">
-													<div class="media-head me-2">
-														<div class="avatar avatar-sm avatar-rounded">
-															<img src="dist/img/avatar10.jpg" alt="user" class="avatar-img">
-														</div>
-													</div>
-													<div class="media-body">
-														<div class="fw-medium text-dark">Johnie Metoyer</div>
-														<div class="fs-7">03 hrs</div>
-													</div>
-												</div>
-												<div class="card-action-wrap">
-													<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" href="#" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-horizontal"></i></span></span></a>
-													<div class="dropdown-menu dropdown-menu-end">
-														<a class="dropdown-item" href="#">Action</a>
-														<a class="dropdown-item" href="#">Another action</a>
-														<a class="dropdown-item" href="#">Something else here</a>
-														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#">Separated link</a>
-													</div>
-												</div>
-											</div>
-											<div class="card-body">
-												<p class="card-text mb-5">Not to mention, Cupcake Ipsum, Bob Ross Ipsum (“happy little clouds”), and the furry Cat Ipsum.</p>
-												<div class="feed-img-layout">
-													<div class="row h-200p">
-														<div class="col-6 h-100">
-															<div class="feed-img h-100" style="background-image:url(dist/img/gallery/mock11.jpg);"></div>
-														</div>
-														<div class="col-6 h-100">
-															<div class="row h-100">
-																<div class="col-sm-12 h-50 pb-2">
-																	<div class="feed-img h-100" style="background-image:url(dist/img/gallery/mock12.jpg);"></div>
-																</div>
-																<div class="col-sm-12 h-50">
-																	<div class="row h-100">
-																		<div class="col-6 h-100">
-																			<div class="feed-img h-100" style="background-image:url(dist/img/gallery/mock13.jpg);"></div>
-																		</div>
-																		<div class="col-6 h-100">
-																			<div class="feed-img h-100" style="background-image:url(dist/img/gallery/mock14.jpg);"></div>
-																		</div>
+														<div class="tab-content mt-7">
+															<div class="tab-pane fade show active" id="tab_payments">
+																<div class="activity-wrap mt-7">
+																	<div class="d-flex align-items-center justify-content-between mb-4">
+																		<div class="title-lg mb-0">Pagos</div>
+																		<!-- <select class="form-select mw-150p">
+																			<option selected="">All Activity</option>
+																			<option value="1">One</option>
+																			<option value="2">Two</option>
+																			<option value="3">Three</option>
+																		</select> -->
 																	</div>
+																	<div class="title-sm text-primary mb-3">June 24</div>
+																	<ul class="activity-thread">
+																		<li>
+																			<div class="media">
+																				<div class="media-head">
+																					<div class="avatar avatar-icon avatar-sm avatar-primary avatar-rounded">
+																						<span class="initial-wrap"><span class="feather-icon"><i data-feather="mail"></i></span></span>
+																					</div>
+																				</div>
+																				<div class="media-body">
+																					<div>
+																						<div class="activity-text">You sent <span class="text-dark text-capitalize">1 message</span> to the contact.</div>
+																						<div class="activity-time">10.00 pm</div>
+																					</div>
+																				</div>
+																			</div>
+																		</li>
+																		
+																	</ul>
+																	<div class="title-sm text-primary mt-5 mb-3">June 25</div>
+																	<ul class="activity-thread">
+																		<li>
+																			<div class="media">
+																				<div class="media-head">
+																					<div class="avatar avatar-sm avatar-soft-danger avatar-rounded">
+																						<span class="initial-wrap">M</span>
+																					</div>
+																				</div>
+																				<div class="media-body">
+																					<div>
+																						<div class="activity-text"><span class="text-dark">Morgan Freeman</span> responded to your appointment schedule question. </div>
+																						<div class="activity-time">10.00 pm</div>
+																					</div>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
 																</div>
 															</div>
 														</div>
+														<!-- <div class="pipeline-status-wrap mt-7">
+															<div class="title-lg mb-3">Lead Pipeline Status</div>
+															<ul class="pipeline-stutus">
+																<li class="completed"><span>In Pipeline</span></li>
+																<li class="active"><span>Follow Up</span></li>
+																<li><span>Scheduled Service</span></li>
+																<li><span>Conversation</span></li>
+																<li><span>Win/Lost</span></li>
+															</ul>
+															<div class="clearfix"></div>
+														</div> -->
+
+
+														
+														
 													</div>
 												</div>
 											</div>
-											<!-- <div class="card-footer justify-content-between">
-												<div>
-													<a href="#"><i class="bi bi-heart-fill text-primary"></i>30K</a>
-												</div>
-												<div>
-													<a href="#">1K comments</a>
-													<a href="#">12 shares</a>
-												</div>
-											</div> -->
 										</div>
-										<div class="card card-border card-profile-feed border-top-0 rounded-top-0 mb-0">
-											<!-- <div class="card-body">
-												<button class="btn btn-light btn-sm btn-block mb-4">Hide comments</button>
-												<div class="comment-block">
-													<div class="media">
-														<div class="media-head">
-															<div class="avatar avatar-xs avatar-rounded">
-																<img src="dist/img/avatar4.jpg" alt="user" class="avatar-img">
-															</div>
-														</div>
-														<div class="media-body">
-															<div>
-																<span class="cm-name">Martin Luther</span>
-															</div>
-															<p>From there, you can run truffle compile, truffle migrate and truffle test to compile your contracts, deploy those contracts to the network, and run their associated unit tests.</p>
-															<div class="comment-action-wrap mt-3">
-																<span>3 hours ago</span>
-																<span class="comment-dot-sep">●</span>
-																<a href="#">Reply</a>
-																<span class="comment-dot-sep">●</span>
-																<a href="#">Like</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div> -->
-											<div class="card-footer comment-block">
-												<form class="w-100">
-													<div class="form-group mb-0">
-														<div class="media">
-															<div class="media-head">
-																<div class="avatar avatar-xs avatar-rounded">
-																	<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
-																</div>
-															</div>
-															<div class="media-body">
-																<textarea class="form-control border-0 bg-transparent shadow-none" rows="1" placeholder="Leave a comment..."></textarea>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-									<div class="card card-border card-profile-feed">
-										<div class="card-header card-header-action">
-											<div class="media align-items-center">
-												<div class="media-head me-2">
-													<div class="avatar avatar-sm avatar-rounded">
-														<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
-													</div>
-												</div>
-												<div class="media-body">
-													<div class="fw-medium text-dark">Mitsoku Heid</div>
-													<div class="fs-7">11 hrs</div>
-												</div>
-											</div>
-											<div class="card-action-wrap">
-												<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" href="#" data-bs-toggle="dropdown"><span class="icon"><span class="feather-icon"><i data-feather="more-horizontal"></i></span></span></a>
-												<div class="dropdown-menu dropdown-menu-end">
-													<a class="dropdown-item" href="#">Action</a>
-													<a class="dropdown-item" href="#">Another action</a>
-													<a class="dropdown-item" href="#">Something else here</a>
-													<div class="dropdown-divider"></div>
-													<a class="dropdown-item" href="#">Separated link</a>
-												</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<p class="card-text mb-5">There was that time artists at Sequence opted to hand-Sharpie the lorem ipsum passage on a line of paper bags they designed for Chipotle.</p>
-											<div class="card card-border">
-												<div class="position-relative">
-													<img class="card-img" src="dist/img/gallery/mock7.jpg" alt="Card image cap">
-													<a href="#" class="btn-video-link"></a>
-												</div>
-											</div>
-										</div>
-										<!-- <div class="card-footer justify-content-between">
-											<div>
-												<a href="#"><i class="bi bi-heart-fill text-primary"></i>30K</a>
-											</div>
-											<div>
-												<a href="#">1K comments</a>
-												<a href="#">12 shares</a>
-											</div>
-										</div> -->
 									</div>
 								</div>
 							</div>
-							
 						</div>
+						<!-- /Contact Details -->
+						
 						<!-- Edit Info -->
-						<div id="add_new_task" class="modal fade add-new-contact" tabindex="-1" role="dialog" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
+						<div id="add_new_contact" class="modal fade add-new-contact" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 								<div class="modal-content">
 									<div class="modal-body">
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">×</span>
 										</button>
-										<h5 class="mb-4">Add New Task</h5>
+										<h5 class="mb-5">Create New Conatct</h5>
 										<form>
-											<div class="title title-xs title-wth-divider text-primary text-uppercase mt-1 mb-4"><span>Basic Info</span></div>
 											<div class="row gx-3">
-												<div class="col-sm-8">
+												<div class="col-sm-2 form-group">
+													<div class="dropify-square">
+														<input type="file"  class="dropify-1"/>
+													</div>
+												</div>
+												<div class="col-sm-10 form-group">
+													<textarea class="form-control mnh-100p" rows="4" placeholder="Add Biography"></textarea>
+												</div>
+											</div>
+											<div class="title title-xs title-wth-divider text-primary text-uppercase my-4"><span>Basic Info</span></div>
+											<div class="row gx-3">
+												<div class="col-sm-4">
 													<div class="form-group">
-														<label class="form-label">Name</label>
+														<label class="form-label">First Name</label>
 														<input class="form-control" type="text"/>
 													</div>
 												</div>
 												<div class="col-sm-4">
 													<div class="form-group">
-														<label class="form-label">Code</label>
+														<label class="form-label">Middle Name</label>
+														<input class="form-control" type="text"/>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="form-group">
+														<label class="form-label">Last Name</label>
 														<input class="form-control" type="text"/>
 													</div>
 												</div>
 											</div>
 											<div class="row gx-3">
-												<div class="col-md-12">
+												<div class="col-sm-6">
 													<div class="form-group">
-														<div class="form-label-group">
-															<label class="form-label">Note/Description</label>
-															<small class="text-muted">200</small>
-														</div>
-														<textarea class="form-control" rows="3"></textarea>
+														<label class="form-label">Email ID</label>
+														<input class="form-control" type="text"/>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="form-label">Phone</label>
+														<input class="form-control" type="text"/>
 													</div>
 												</div>
 											</div>
 											<div class="row gx-3">
-												<div class="col-sm-6">
+												<div class="col-sm-4">
 													<div class="form-group">
-														<label class="form-label">Start Date</label>
-														<input class="form-control" name="single-date-pick" type="text"/>
-														<div class="form-check form-check-sm mt-2">
-															<input type="checkbox" class="form-check-input" checked="">
-															<label class="form-check-label">Mark as milestone</label>
-														</div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="form-group">
-														<label class="form-label">Start Time</label>
-														<input class="form-control input-single-timepicker" name="input-timepicker" type="text"/>
-													</div>
-												</div>
-											</div>
-											<div class="row gx-3">
-												<div class="col-sm-6">
-													<div class="form-group">
-														<label class="form-label">End Date</label>
-														<input class="form-control" name="single-date-pick" type="text"/>
-														<div class="form-check form-check-sm mt-2">
-															<input type="checkbox" class="form-check-input" checked="">
-															<label class="form-check-label">Mark as milestone</label>
-														</div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="form-group">
-														<label class="form-label">End Time</label>
-														<input class="form-control input-single-timepicker" type="text"/>
-													</div>
-												</div>
-											</div>
-											<div class="row gx-3">
-												<div class="col-sm-6">
-													<div class="form-group">
-														<label class="form-label">Category</label>
-														<select class="form-control custom-select">
-															<option selected="">Project</option>
+														<label class="form-label">City</label>
+														<select class="form-select">
+															<option selected="">--</option>
 															<option value="1">One</option>
 															<option value="2">Two</option>
 															<option value="3">Three</option>
 														</select>
 													</div>
 												</div>
-												<div class="col-sm-6">
+												<div class="col-sm-4">
 													<div class="form-group">
-														<label class="form-label">Status</label>
-														<select class="form-control custom-select">
-															<option selected="">To-Do</option>
-															<option value="1">On Hold</option>
-															<option value="1">In Progress</option>
-															<option value="2">Done</option>
-															<option value="3">Pending</option>
+														<label class="form-label">State</label>
+														<select class="form-select">
+															<option selected="">--</option>
+															<option value="1">One</option>
+															<option value="2">Two</option>
+															<option value="3">Three</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="form-group">
+														<label class="form-label">Country</label>
+														<select class="form-select">
+															<option selected="">--</option>
+															<option value="1">One</option>
+															<option value="2">Two</option>
+															<option value="3">Three</option>
 														</select>
 													</div>
 												</div>
 											</div>
+											<div class="title title-xs title-wth-divider text-primary text-uppercase my-4"><span>Company Info</span></div>
 											<div class="row gx-3">
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="form-label">Company Name</label>
+														<input class="form-control" type="text"/>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="form-label">Designation</label>
+														<input class="form-control" type="text"/>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="form-label">Website</label>
+														<input class="form-control" type="text"/>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="form-label">Work Phone</label>
+														<input class="form-control" type="text"/>
+													</div>
+												</div>
+											</div>
+											<div class="title title-xs title-wth-divider text-primary text-uppercase my-4"><span>Additional Info</span></div>
+											<!-- <div class="row gx-3">
 												<div class="col-sm-12">
-													<div class="form-inline">
-														<div class="form-group">
-															<label class="form-label">Set priority:</label>
-															<div class="form-check form-check-inline ms-2">
-																<div class="custom-control custom-radio radio-primary">
-																	<input type="radio" id="customRadioc2" name="customRadioc2" class="form-check-input">
-																	<label class="form-check-label" for="customRadioc2">High</label>
-																</div>
-															</div>
-															<div class="form-check form-check-inline">
-																<div class="custom-control custom-radio radio-primary">
-																	<input type="radio" id="customRadioc3" name="customRadioc2" class="form-check-input">
-																	<label class="form-check-label" for="customRadioc3">Medium</label>
-																</div>
-															</div>
-															<div class="form-check form-check-inline">
-																<div class="custom-control custom-radio radio-primary">
-																	<input type="radio" id="customRadioc4" name="customRadioc2" class="form-check-input">
-																	<label class="form-check-label" for="customRadioc4">Low</label>
-																</div>
-															</div>
-														</div>
+													<div class="form-group">
+														<label class="form-label">Tags</label>
+														<select id="input_tags_2" class="form-control" multiple="multiple">
+														</select>
+														<small class="form-text text-muted">
+														   You can add upto 4 tags per contact
+														</small>
 													</div>
 												</div>
-											</div>
-											<div class="title title-xs title-wth-divider text-primary text-uppercase my-4"><span>Assign to</span></div>
-											<div class="repeater">
-												<div data-repeater-list="category-group">
-													<div class="d-flex">
-														<div class="row gx-3 flex-1">
-															<div class="col-sm-6 form-group mb-0">
-																<label class="form-label">Add Person</label>
-															</div>
-															<div class="col-sm-6 form-group mb-0">
-																<label class="form-label">Role</label>
-															</div>
-														</div>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light mb-2" data-repeater-create data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add Person"><span class="icon"><span class="feather-icon"><i data-feather="plus"></i></span></span></a>
-													</div>
-													<div class="d-flex" data-repeater-item>
-														<div class="row gx-3 flex-1">
-															<div class="col-sm-6 form-group">
-																<input class="form-control" placeholder="--" type="text"/>
-															</div>
-															<div class="col-sm-6 form-group">
-																<input class="form-control" placeholder="--" type="text"/>
-															</div>
-														</div>
-														<a href="#" class="btn btn-xs btn-icon btn-rounded btn-light ms-2 mt-1" data-repeater-delete><span class="icon"><i class="ri-delete-bin-6-line"></i></span></a>
+											</div> -->
+											<!-- <div class="row gx-3">
+												<div class="col-sm-6">
+													<div class="form-group">
+														<input class="form-control" type="text" placeholder="Facebook"/>
 													</div>
 												</div>
-											</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<input class="form-control" type="text" placeholder="Twitter"/>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<input class="form-control" type="text" placeholder="LinkedIn"/>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<input class="form-control" type="text" placeholder="Gmail"/>
+													</div>
+												</div>
+											</div> -->
 										</form>
 									</div>
 									<div class="modal-footer align-items-center">
-										<button type="button" class="btn btn-secondary">Discard</button>
-										<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add</button>
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+										<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create Contact</button>
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- /Edit Info -->
+						
+						<!-- Add Label -->
+						<div id="add_new_label" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">×</span>
+										</button>
+										<h6 class="text-uppercase fw-bold mb-3">Add Label</h6>
+										<form>
+											<div class="row gx-3">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<input class="form-control" type="text" placeholder="Label Name"/>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Add</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Label -->
+						
+						<!-- Add Tag -->
+						<div id="add_new_tag" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">×</span>
+										</button>
+										<h6 class="text-uppercase fw-bold mb-3">Add Tag</h6>
+										<form>
+											<div class="row gx-3">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<select id="input_tags_3" class="form-control" multiple="multiple">
+															<option selected="selected">Collaborator</option>
+															<option selected="selected">Designer</option>
+															<option selected="selected">React Developer</option>
+															<option selected="selected">Promotion</option>
+															<option selected="selected">Advertisement</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Add</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Tag -->
 					</div>
 				</div>
 			</div>
@@ -2153,30 +2354,27 @@ Contact: contact@hencework.com
 
 	<!-- Simplebar JS -->
 	<script src="vendors/simplebar/dist/simplebar.min.js"></script>
+	
+	<!-- Data Table JS -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="vendors/datatables.net-select/js/dataTables.select.min.js"></script>
+    
+	<!-- Select2 JS -->
+    <script src="vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="dist/js/select2-data.js"></script>
+	
+	<!-- Dropify JS -->
+	<script src="vendors/dropify/dist/js/dropify.min.js"></script>
+	<script src="dist/js/dropify-data.js"></script>
 
-	<!-- Daterangepicker JS -->
-    <script src="vendors/moment/min/moment.min.js"></script>
-    <script src="vendors/daterangepicker/daterangepicker.js"></script>
-    <script src="dist/js/daterangepicker-data.js"></script>
-	
-	<!-- Tinymce JS -->
-    <script src="vendors/tinymce/tinymce.min.js"></script>
-	
-	<!-- Dropzone JS -->
-	<script src="vendors/dropzone/dist/dropzone.min.js"></script>
-	
-	<!-- Apex JS -->
-	<script src="vendors/apexcharts/dist/apexcharts.min.js"></script>
-	
-	<!-- Repeater JS -->
-    <script src="vendors/jquery.repeater/jquery.repeater.min.js"></script>
-	
-	<!-- Drag JS -->
-	<script src="vendors/dragula/dist/dragula.min.js"></script>
-	
+	<!-- Rating JS -->
+	<script src="dist/js/jquery.star-rating-svg.min.js"></script>
+	<script src="dist/js/rating.js"></script>
+
 	<!-- Init JS -->
 	<script src="dist/js/init.js"></script>
-	<script src="dist/js/todo-data.js"></script>
+	<script src="dist/js/contact-data.js"></script>
 	<script src="dist/js/chips-init.js"></script>
 </body>
 </html>
